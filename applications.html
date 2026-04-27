@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergent Applications</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="applications">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Emergent home">
+          <span class="brand__name">Emergent</span>
+          <span class="brand__tags">
+            <span class="brand__tag brand__tag--bio">Bio</span>
+            <span class="brand__tag brand__tag--ai">AI</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="science.html">Science</a>
+          <a href="applications.html">Applications</a>
+          <a class="site-nav__cta" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero page-hero--applications">
+        <div class="shell page-hero__grid">
+          <div class="page-hero__copy">
+            <p class="eyebrow">Applications</p>
+            <h1>Neurodegeneration is a natural first proving ground</h1>
+            <p class="page-copy">
+              Many neurodegenerative diseases are tightly linked to pathological
+              protein misfolding and aggregation. That makes them a compelling
+              first application lens for Emergent: the biology is structural,
+              the failure modes are molecular, and the unmet need is enormous.
+            </p>
+          </div>
+
+          <aside class="page-hero__stat reveal">
+            <span class="metric-pill">Misfolding focus</span>
+            <h2>Alzheimer's, Parkinson's, and related disorders</h2>
+            <p class="stat-copy">
+              These diseases do not reduce to one broken protein, but abnormal
+              folding and aggregation are central enough to define the target
+              selection logic.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="band band--paper">
+        <div class="shell disease-intro">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Disease biology</p>
+            <h2>Why misfolding matters here</h2>
+            <p class="section-copy">
+              Alzheimer's disease is strongly associated with beta-amyloid
+              plaques between neurons and tau tangles inside them. Parkinson's
+              disease is strongly associated with abnormal alpha-synuclein and
+              Lewy bodies in affected brain cells. In both cases, pathological
+              protein behavior is part of the disease signature rather than a
+              side detail.
+            </p>
+          </div>
+
+          <div class="disease-profiles">
+            <article class="disease-profile reveal">
+              <span class="disease-profile__tag">Alzheimer's</span>
+              <h3>Two hallmark protein pathologies</h3>
+              <div class="disease-profile__rows">
+                <div class="disease-profile__row">
+                  <span>Extracellular signal</span>
+                  <strong>Beta-amyloid plaques</strong>
+                </div>
+                <div class="disease-profile__row">
+                  <span>Intracellular signal</span>
+                  <strong>Tau tangles</strong>
+                </div>
+                <div class="disease-profile__row">
+                  <span>Why it matters</span>
+                  <strong>Cell communication breaks down</strong>
+                </div>
+              </div>
+              <p>
+                The disease is strongly associated with protein aggregates both
+                between neurons and inside them, making structural failure part
+                of the core pathology.
+              </p>
+            </article>
+
+            <article class="disease-profile reveal">
+              <span class="disease-profile__tag">Parkinson's</span>
+              <h3>Aggregation around alpha-synuclein</h3>
+              <div class="disease-profile__rows">
+                <div class="disease-profile__row">
+                  <span>Protein signal</span>
+                  <strong>Misfolded alpha-synuclein</strong>
+                </div>
+                <div class="disease-profile__row">
+                  <span>Cellular finding</span>
+                  <strong>Lewy bodies</strong>
+                </div>
+                <div class="disease-profile__row">
+                  <span>Why it matters</span>
+                  <strong>Vulnerable neurons become dysfunctional</strong>
+                </div>
+              </div>
+              <p>
+                Parkinson's disease has become a model case for how abnormal
+                protein behavior can be tracked, detected, and potentially
+                targeted as part of disease biology.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--white">
+        <div class="shell capability-columns">
+          <article class="detail-block reveal">
+            <h3>Alzheimer's disease</h3>
+            <p>
+              The Alzheimer's Association describes plaques and tangles as
+              prime suspects in damaging and killing nerve cells. Plaques are
+              beta-amyloid deposits that build up between nerve cells, while
+              tangles are twisted tau fibers that build up inside cells.
+            </p>
+          </article>
+
+          <article class="detail-block reveal">
+            <h3>Parkinson's disease</h3>
+            <p>
+              NINDS notes that affected brain cells in Parkinson's disease
+              contain Lewy bodies, which are deposits of alpha-synuclein.
+              Misfolded alpha-synuclein is now important enough that seed
+              amplification assays are being developed to detect it.
+            </p>
+          </article>
+
+          <article class="detail-block reveal">
+            <h3>Why this fits Emergent</h3>
+            <p>
+              If disease depends in part on whether proteins fold, aggregate,
+              or destabilize, then mutation-aware and structure-aware models
+              become directly relevant to target selection and design strategy.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="band band--mint">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Program directions</p>
+            <h2>How a protein design company could engage these diseases</h2>
+          </div>
+
+          <div class="capability-columns">
+            <article class="detail-block reveal">
+              <h3>Aggregation-aware mutation ranking</h3>
+              <p>
+                Prioritize variants and structural regions that appear most
+                likely to destabilize a fold or increase pathological
+                aggregation risk.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Stability-driven design exploration</h3>
+              <p>
+                Search for sequence changes that preserve desired function while
+                reducing the structural fragility that allows misfolding to
+                cascade.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Biotech and pharma partnership tools</h3>
+              <p>
+                Build model-assisted workflows that help disease teams interpret
+                mutation data, triage candidates, and define better experimental
+                follow-up.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--contact">
+        <div class="shell source-strip reveal">
+          <div>
+            <p class="eyebrow">Background sources</p>
+            <h2>Medical background for this page</h2>
+            <p>
+              The disease descriptions above are based on public information
+              from the Alzheimer's Association, the National Institute of
+              Neurological Disorders and Stroke, and the Parkinson's
+              Foundation.
+            </p>
+          </div>
+          <div class="source-links">
+            <a href="https://www.alz.org/alzheimers-dementia/what-is-alzheimers" target="_blank" rel="noreferrer">Alzheimer's Association</a>
+            <a href="https://www.ninds.nih.gov/health-information/disorders/parkinsons-disease" target="_blank" rel="noreferrer">NINDS</a>
+            <a href="https://www.parkinson.org/understanding-parkinsons/what-is-parkinsons" target="_blank" rel="noreferrer">Parkinson's Foundation</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>Emergent</p>
+        <p>&copy; <span data-year></span> Emergent</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

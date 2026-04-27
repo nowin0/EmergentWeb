@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergent Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="science">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Emergent home">
+          <span class="brand__name">Emergent</span>
+          <span class="brand__tags">
+            <span class="brand__tag brand__tag--bio">Bio</span>
+            <span class="brand__tag brand__tag--ai">AI</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="science.html">Science</a>
+          <a href="applications.html">Applications</a>
+          <a class="site-nav__cta" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero page-hero--science">
+        <div class="shell page-hero__grid">
+          <div class="page-hero__copy">
+            <p class="eyebrow">Science</p>
+            <h1>Sequence alone is too thin a view of a protein</h1>
+            <p class="page-copy">
+              Emergent is built around a research thesis: to predict protein
+              dysfunction and eventually design better proteins, models must
+              reason across sequence, structure, and mutation effects together.
+            </p>
+          </div>
+
+          <aside class="page-hero__stat reveal">
+            <span class="metric-pill">Scientific thesis</span>
+            <h2>Sequence + structure + function</h2>
+            <p class="stat-copy">
+              Biological meaning sits in the interaction between these layers,
+              not in any one of them by itself.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="band band--white">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Research principles</p>
+            <h2>What the company believes technically</h2>
+          </div>
+
+          <div class="science-principles">
+            <article class="detail-block reveal">
+              <h3>Proteins are relational objects</h3>
+              <p>
+                Residues matter because of their neighborhoods, contacts, and
+                long-range effects on the fold, not just because of local
+                sequence identity.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Mutation is an information-rich probe</h3>
+              <p>
+                Harmful substitutions expose which bonds, motifs, and spatial
+                regions carry the most functional weight.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Embedding spaces should stay biochemical</h3>
+              <p>
+                A useful model organizes residues by physically meaningful
+                behavior, not just by statistical similarity.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Prediction is only the midpoint</h3>
+              <p>
+                The destination is design: stabilized proteins, lower
+                aggregation risk, and stronger therapeutic hypotheses.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--paper">
+        <div class="shell dual-stage">
+          <div class="science-flow reveal">
+            <p class="eyebrow">Method arc</p>
+            <h2>How the science progresses</h2>
+
+            <div class="flow-step">
+              <span class="flow-step__index">01</span>
+              <div>
+                <h3>Start with known proteins and measured mutations</h3>
+                <p>
+                  Sequence, structural annotation, and mutation outcomes define
+                  a training problem that is grounded in real biological
+                  failure, not abstract language modeling alone.
+                </p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <span class="flow-step__index">02</span>
+              <div>
+                <h3>Learn a structure-aware representation</h3>
+                <p>
+                  Graph message passing lets the model absorb both peptide
+                  connectivity and residue proximity in three-dimensional space.
+                </p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <span class="flow-step__index">03</span>
+              <div>
+                <h3>Use mutation damage as a guide to design</h3>
+                <p>
+                  Once fragile regions are visible, the next question is how to
+                  search for variants that keep the same function with less
+                  structural risk.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="media-panel science-visual reveal">
+            <img
+              src="assets/images/mutation-explorer-edges.png"
+              alt="Mutation explorer visual with graph edges enabled."
+            />
+            <figcaption>
+              This visual captures the scientific intuition behind Emergent:
+              residues live inside a network of constraints, and the network is
+              part of the phenotype.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="band band--navy">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Research questions</p>
+            <h2>What the next experiments should answer</h2>
+          </div>
+
+          <div class="question-strip">
+            <article class="detail-block reveal">
+              <h3>Can richer structural inputs improve mutation ranking again?</h3>
+              <p>
+                The early GNN result suggests yes, but new architectures should
+                test how much more geometry and interaction detail can help.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Which embeddings transfer best into generation?</h3>
+              <p>
+                If the representation really captures stability and damage, it
+                should become a useful prior for proposing new sequences.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>How close can computation get to wet-lab decisions?</h3>
+              <p>
+                The practical test is whether the model can narrow the
+                experimental search space in a way biologists trust.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>Emergent</p>
+        <p>&copy; <span data-year></span> Emergent</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

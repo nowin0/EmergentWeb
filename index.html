@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergent | Autonomous Protein Design</title>
+    <meta
+      name="description"
+      content="Emergent builds structure-aware Bio + AI systems for protein mutation modeling, autonomous design, and biopharma applications in misfolding disease."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Emergent home">
+          <span class="brand__name">Emergent</span>
+          <span class="brand__tags">
+            <span class="brand__tag brand__tag--bio">Bio</span>
+            <span class="brand__tag brand__tag--ai">AI</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="science.html">Science</a>
+          <a href="applications.html">Applications</a>
+          <a class="site-nav__cta" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <canvas id="bio-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+        <div class="hero__veil"></div>
+        <div class="shell hero__grid">
+          <div class="hero__intro reveal">
+            <p class="eyebrow">Protein design for disease biology</p>
+            <h1>Emergent</h1>
+            <p class="hero__motto">
+              Autonomous protein design for biology's hardest failure modes.
+            </p>
+            <p class="hero__blurb">
+              Emergent models protein mutation with graph neural networks,
+              develops new architectures for structural biology, and aims those
+              systems at biotech and pharma use cases where misfolding drives
+              disease. The long-term ambition is not just to read molecular
+              failure, but to design around it.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="platform.html"
+                >Explore the platform</a
+              >
+              <a class="button button--ghost" href="#visuals"
+                >See research visuals</a
+              >
+            </div>
+          </div>
+
+          <aside class="hero__aside reveal" aria-label="Emergent focus areas">
+            <div class="signal-card">
+              <span class="signal-card__label">Bio</span>
+              <p>
+                Structural biology, protein mutation, folding stability, and
+                disease mechanisms.
+              </p>
+            </div>
+            <div class="signal-card">
+              <span class="signal-card__label">AI</span>
+              <p>
+                Graph learning, structure-aware representations, embedding
+                spaces, and autonomous design loops.
+              </p>
+            </div>
+            <div class="signal-card">
+              <span class="signal-card__label">First wedge</span>
+              <p>
+                Misfolding pathologies in neurodegeneration and adjacent
+                protein-failure programs.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="band band--paper">
+        <div class="shell capability-band">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Capability map</p>
+            <h2>From mutation ranking to design hypotheses</h2>
+            <p class="section-copy">
+              Emergent starts where structure matters most: understanding which
+              residue changes damage a protein, which ones preserve function,
+              and which design directions might stabilize the system instead.
+            </p>
+          </div>
+
+          <div class="capability-columns">
+            <article class="detail-block reveal">
+              <h3>Mutation intelligence</h3>
+              <p>
+                The first models score amino acid substitutions in structural
+                context, treating proteins as interacting systems rather than
+                plain sequences.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Structure-native learning</h3>
+              <p>
+                Emergent is developing architectures that absorb geometry,
+                neighborhoods, and emergent three-dimensional constraints as
+                first-class inputs.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Therapeutic direction</h3>
+              <p>
+                The goal is to turn mechanistic understanding into candidate
+                designs for biotech and pharma programs, especially where
+                protein misfolding is central to pathology.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--visuals" id="visuals">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Research visuals</p>
+            <h2>The work already has a technical shape</h2>
+            <p class="section-copy">
+              These attached visuals anchor the first public narrative: protein
+              misfolding, graph-based mutation modeling, and early interfaces
+              for exploring structure and embedding space together.
+            </p>
+          </div>
+
+          <div class="visual-story">
+            <figure class="poster-frame reveal">
+              <button
+                class="media-trigger media-trigger--poster"
+                type="button"
+                data-lightbox="assets/images/achilles-poster.png"
+                data-lightbox-alt="ACHILLES poster describing missense mutation prediction, protein misfolding, graph neural network architecture, and benchmark results."
+                data-lightbox-caption="ACHILLES ties together misfolding biology, graph neural network design, and early benchmark results on p53 variants."
+                aria-label="Open full view of the ACHILLES poster"
+              >
+                <span class="media-surface media-surface--poster">
+                  <img
+                    src="assets/images/achilles-poster.png"
+                    alt="ACHILLES poster describing missense mutation prediction, protein misfolding, graph neural network architecture, and benchmark results."
+                  />
+                </span>
+                <span class="media-trigger__hint">Full view</span>
+              </button>
+              <figcaption>
+                ACHILLES ties together misfolding biology, graph neural network
+                design, and early benchmark results on p53 variants.
+              </figcaption>
+            </figure>
+
+            <div class="mini-media-grid">
+              <figure class="media-panel reveal">
+                <button
+                  class="media-trigger"
+                  type="button"
+                  data-lightbox="assets/images/mutation-explorer-overview.png"
+                  data-lightbox-alt="Mutation explorer interface showing structure and embedding views."
+                  data-lightbox-caption="Structure view and embedding view side by side, built for residue-level mutation exploration."
+                  aria-label="Open full view of the mutation explorer overview"
+                >
+                  <span class="media-surface">
+                    <img
+                      src="assets/images/mutation-explorer-overview.png"
+                      alt="Mutation explorer interface showing structure and embedding views."
+                    />
+                  </span>
+                  <span class="media-trigger__hint">Full view</span>
+                </button>
+                <figcaption>
+                  Structure view and embedding view side by side, built for
+                  residue-level mutation exploration.
+                </figcaption>
+              </figure>
+
+              <figure class="media-panel reveal">
+                <button
+                  class="media-trigger"
+                  type="button"
+                  data-lightbox="assets/images/mutation-explorer-edges.png"
+                  data-lightbox-alt="Mutation explorer interface showing structure and embedding connectivity."
+                  data-lightbox-caption="Connectivity overlays reveal how the model organizes residues through learned relationships, not just sequence order."
+                  aria-label="Open full view of the mutation explorer connectivity view"
+                >
+                  <span class="media-surface">
+                    <img
+                      src="assets/images/mutation-explorer-edges.png"
+                      alt="Mutation explorer interface showing structure and embedding connectivity."
+                    />
+                  </span>
+                  <span class="media-trigger__hint">Full view</span>
+                </button>
+                <figcaption>
+                  Connectivity overlays reveal how the model organizes residues
+                  through learned relationships, not just sequence order.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--mint">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Site map</p>
+            <h2>Three ways into Emergent</h2>
+          </div>
+
+          <div class="link-panels">
+            <a class="link-panel reveal" href="platform.html">
+              <span class="link-panel__label">Platform</span>
+              <h3>How the models are put together</h3>
+              <p>
+                Structure-first graph learning, benchmark results, and the path
+                from mutation scoring toward design.
+              </p>
+            </a>
+
+            <a class="link-panel reveal" href="science.html">
+              <span class="link-panel__label">Science</span>
+              <h3>The research thesis behind the company</h3>
+              <p>
+                Why Emergent treats sequence, structure, and functional damage
+                as one learning problem.
+              </p>
+            </a>
+
+            <a class="link-panel reveal" href="applications.html">
+              <span class="link-panel__label">Applications</span>
+              <h3>Where misfolding biology becomes a product wedge</h3>
+              <p>
+                Neurodegeneration, stability-focused design, and program areas
+                where molecular failure can be measured and improved.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--contact">
+        <div class="shell cta-ribbon reveal">
+          <div>
+            <p class="eyebrow">Open a conversation</p>
+            <h2>Emergent is building at the boundary between structural biology and AI.</h2>
+            <p>
+              Reach out for research collaborations, biotech partnerships, or
+              early company conversations.
+            </p>
+          </div>
+          <a class="button button--primary" href="contact.html">Contact Us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>Emergent</p>
+        <p>Autonomous protein design for biopharma applications.</p>
+        <p>&copy; <span data-year></span> Emergent</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

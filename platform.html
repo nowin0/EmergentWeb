@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergent Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="platform">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html" aria-label="Emergent home">
+          <span class="brand__name">Emergent</span>
+          <span class="brand__tags">
+            <span class="brand__tag brand__tag--bio">Bio</span>
+            <span class="brand__tag brand__tag--ai">AI</span>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="platform.html">Platform</a>
+          <a href="science.html">Science</a>
+          <a href="applications.html">Applications</a>
+          <a class="site-nav__cta" href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero page-hero--platform">
+        <div class="shell page-hero__grid">
+          <div class="page-hero__copy">
+            <p class="eyebrow">Platform</p>
+            <h1>A structure-first stack for autonomous protein design</h1>
+            <p class="page-copy">
+              The ACHILLES poster gives the clearest early platform snapshot:
+              model protein mutations in structural context, learn through graph
+              message passing, and use the resulting embeddings to rank damage
+              more accurately than sequence-only baselines.
+            </p>
+          </div>
+
+          <aside class="page-hero__stat reveal">
+            <span class="metric-pill">ACHILLES benchmark</span>
+            <h2>p53 variant ranking</h2>
+            <p class="stat-number">0.6337</p>
+            <p class="stat-copy">
+              Spearman correlation for the GNN result shown on the poster,
+              ahead of the ESM-derived baselines listed below.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="band band--paper">
+        <div class="shell platform-bench">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Poster-derived benchmarks</p>
+            <h2>Where the graph model beat the sequence baselines</h2>
+            <p class="section-copy">
+              The ACHILLES poster reports three p53 ranking results. Emergent's
+              graph neural network leads both listed ESM-based baselines,
+              suggesting that structural context carries signal that sequence
+              embeddings alone leave on the table. The poster also frames p53
+              as a meaningful test case because p53 variants are implicated in
+              a large share of human cancers.
+            </p>
+          </div>
+
+          <div class="benchmark-list reveal">
+            <div class="benchmark-row">
+              <div class="benchmark-row__header">
+                <span>Sequence ESM + MLP</span>
+                <strong>0.3689</strong>
+              </div>
+              <div class="benchmark-bar">
+                <span style="width: 58.2%"></span>
+              </div>
+            </div>
+
+            <div class="benchmark-row">
+              <div class="benchmark-row__header">
+                <span>Linear ESM (ridge)</span>
+                <strong>0.4242</strong>
+              </div>
+              <div class="benchmark-bar">
+                <span style="width: 66.9%"></span>
+              </div>
+            </div>
+
+            <div class="benchmark-row benchmark-row--winner">
+              <div class="benchmark-row__header">
+                <span>Emergent GNN</span>
+                <strong>0.6337</strong>
+              </div>
+              <div class="benchmark-bar">
+                <span style="width: 100%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band--navy">
+        <div class="shell dual-stage">
+          <div class="platform-ladder reveal">
+            <p class="eyebrow">Core architecture</p>
+            <h2>How the platform thinks</h2>
+
+            <div class="flow-step">
+              <span class="flow-step__index">01</span>
+              <div>
+                <h3>Graph construction</h3>
+                <p>
+                  Proteins are represented as graphs where residues become
+                  nodes and edges capture both peptide connectivity and
+                  structure-revealed spatial relationships.
+                </p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <span class="flow-step__index">02</span>
+              <div>
+                <h3>Message passing</h3>
+                <p>
+                  Information moves across residue neighborhoods so the model
+                  can learn which local interactions help preserve function and
+                  which changes destabilize the fold.
+                </p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <span class="flow-step__index">03</span>
+              <div>
+                <h3>Damage ranking and design direction</h3>
+                <p>
+                  The learned embedding space is used to rank mutation severity,
+                  expose structural weak points, and open a path toward
+                  generation and stabilization work.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <figure class="poster-frame reveal">
+            <button
+              class="media-trigger media-trigger--poster"
+              type="button"
+              data-lightbox="assets/images/achilles-poster.png"
+              data-lightbox-alt="ACHILLES poster explaining the link between missense mutation prediction, protein misfolding, graph neural network architecture, and p53 benchmark results."
+              data-lightbox-caption="The poster grounds the current platform story: misfolding-aware biological intuition, graph message passing, and a measurable lift over ESM-derived baselines."
+              aria-label="Open full view of the ACHILLES poster"
+            >
+              <span class="media-surface media-surface--poster">
+                <img
+                  src="assets/images/achilles-poster.png"
+                  alt="ACHILLES poster explaining the link between missense mutation prediction, protein misfolding, graph neural network architecture, and p53 benchmark results."
+                />
+              </span>
+              <span class="media-trigger__hint">Full view</span>
+            </button>
+            <figcaption>
+              The poster grounds the current platform story: misfolding-aware
+              biological intuition, graph message passing, and a measurable
+              lift over ESM-derived baselines.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="band band--white">
+        <div class="shell platform-notes">
+          <div class="section-heading reveal">
+            <p class="eyebrow">What the platform enables</p>
+            <h2>Mutation maps become design surfaces</h2>
+          </div>
+
+          <div class="capability-columns">
+            <article class="detail-block reveal">
+              <h3>Residue-level triage</h3>
+              <p>
+                The system can surface where a protein is fragile and which
+                substitutions appear especially damaging in context.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Embedding-space organization</h3>
+              <p>
+                The explorer views suggest the model is separating residues by
+                meaningful biochemical behavior rather than random geometry.
+              </p>
+            </article>
+
+            <article class="detail-block reveal">
+              <h3>Future generation loop</h3>
+              <p>
+                Once the model can reliably describe failure, it becomes a much
+                stronger base for designing proteins that avoid it.
+              </p>
+            </article>
+          </div>
+
+          <div class="mini-media-grid">
+            <figure class="media-panel reveal">
+              <button
+                class="media-trigger"
+                type="button"
+                data-lightbox="assets/images/mutation-explorer-overview.png"
+                data-lightbox-alt="Mutation explorer overview showing structure and embedding panels for a protein."
+                data-lightbox-caption="The overview view emphasizes residue neighborhoods and embedding-space separation side by side."
+                aria-label="Open full view of the mutation explorer overview"
+              >
+                <span class="media-surface">
+                  <img
+                    src="assets/images/mutation-explorer-overview.png"
+                    alt="Mutation explorer overview showing structure and embedding panels for a protein."
+                  />
+                </span>
+                <span class="media-trigger__hint">Full view</span>
+              </button>
+              <figcaption>
+                The overview view emphasizes residue neighborhoods and
+                embedding-space separation side by side.
+              </figcaption>
+            </figure>
+
+            <figure class="media-panel reveal">
+              <button
+                class="media-trigger"
+                type="button"
+                data-lightbox="assets/images/mutation-explorer-edges.png"
+                data-lightbox-alt="Mutation explorer view with edge connectivity enabled."
+                data-lightbox-caption="With edges enabled, the graph interpretation becomes explicit: local structure and long-range relationships both matter."
+                aria-label="Open full view of the mutation explorer connectivity view"
+              >
+                <span class="media-surface">
+                  <img
+                    src="assets/images/mutation-explorer-edges.png"
+                    alt="Mutation explorer view with edge connectivity enabled."
+                  />
+                </span>
+                <span class="media-trigger__hint">Full view</span>
+              </button>
+              <figcaption>
+                With edges enabled, the graph interpretation becomes explicit:
+                local structure and long-range relationships both matter.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__inner">
+        <p>Emergent</p>
+        <p>&copy; <span data-year></span> Emergent</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
